@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart Details - MelStore </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@200;300;400;600;700&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <div class="span">
+                <a href="index.html"><img src="Images/logo.jpg" width="50px"alt="logo"></a>
+                <P style="margin-left: 10px">MelStores</P>
+            </div>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav> 
+            <a href=""><img src="Images/shopping-cart-icon-29084.gif" width="30px" height="30px" alt=""></a>
+            <img src="Images/menu.jpg" class="menu-icon" onclick="openmenu()">      
+        </div>
+        
+    </div>
+</div>
+    
+    <!-------cart item details -------->
+    <div class="small-cont" cart-page>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/gallery-1.png" alt="">
+                        <div>
+                            <p>Printed T-shirt</p>
+                            <small>Price: #15,000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>#15,000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/product-9.webp" alt="">
+                        <div>
+                            <p>Galaxy Watch 4</p>
+                            <small>Price: #190,000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>#190,000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/product-11.jpg" alt="">
+                        <div>
+                            <p>Pinkl Jules</p>
+                            <small>Price: #115,000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>#115,000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Images/product-12.jpg" alt="">
+                        <div>
+                            <p>Brown Leather Sneakers</p>
+                            <small>Price: #125,999</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>#125,999</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>#445,000</td>
+                </tr>
+                <tr>
+                    <td>Tax :</td>
+                    <td>#5,000</td>
+                </tr>
+                <tr>
+                    <td>Total :</td>
+                    <td>#450,000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    
+    <!--------- footer---------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App on Play Store (Android) or App Store (ios)</p>
+                    <div class="app-logo">
+                        <a href="#"><img src="Images/playstore-logo.png" alt=""></a>
+                        <a href="#"><img src="Images/appstore-logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <a href="#"><img src="Images/logo.jpg" width="30px"></a>
+                    <p>
+                        Our Purpose Is To Sustainably Make the Pleasure and
+                        Benefits of Shopping Accessible to All.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliates</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us On !!!</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>You-tube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 all rights reserved</p>
+        </div>
+    </div>
+    <!-----------js to open menu--------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+
+        MenuItems.style.maxHeight = "0px";
+
+        function openmenu(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+</body>
+</html>

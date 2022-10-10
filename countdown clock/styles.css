@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url("./images/new-year.webp");
+    background-size: cover; 
+    background-position: center center;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    min-height: 100vh;
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.countdown-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    font-size: 5rem;
+    font-weight: normal;
+    margin-bottom: 10rem;
+}
+.big-text{
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 1.5rem;
+}
+span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+

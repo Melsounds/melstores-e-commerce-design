@@ -1,0 +1,30 @@
+body{
+    color: #fff;
+    background-color: lightblue;
+    font-size: 15px;
+}
+p{
+    color: #2f4c5c;
+}
+.intro{
+    font-size: 20px;
+}
+h1{
+    font-size: 45px;
+    color: darkblue;  
+}
+
+/*this is the css box model*/
+
+/*
+margin:
+border:
+padding:
+*/
+.box{
+    background: pink;
+    width: 300px;
+    margin: 100px;
+    border: 7px solid red;
+    padding: 100px;
+    }
